@@ -1,0 +1,6 @@
+/* main container background color  */
+#main-bg {
+    background-image: url('./image/wave.png');
+    background-size: cover;
+    background-color: rgba(252, 5, 5, 0.767);
+  }
