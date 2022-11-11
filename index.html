@@ -19,23 +19,26 @@
     crossorigin="anonymous"></script>
   <title>Incaendo</title>
 </head>
+
 <body>
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <div class="row d-flex  justify-content-between">
+    <div class="container-fluid">
 
         <!-- company name  -->
 
-        <div class="col-lg-9  col-md-12 col-sm-12 justify-content-md-center justify-content-sm-center">
+        <div class="navbar-brand">
           <h2 class=""><span class="text-info">Incaendo</span> <span class="text-danger  ">Technologies</span></h2>
         </div>
 
         <!-- menu bar  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="collapse navbar-collapse col-lg-3 d-sm-none d-md-none d-md-block d-sm-block">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse"  id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active h5" aria-current="page" href="#">Home</a>
             </li>
@@ -53,15 +56,43 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="col-md-2 col-sm-2  d-lg-none d-lg-block">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
-            <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z"/>
-            <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-          <img src="./image/dropdown.png" class="w-75 h-75" alt="image">
+
+        <!-- dropdown 
+
+        <div class="ml col-2 d-lg-none col-md-2">
+          <div>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light p-1">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active h5" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  h5" href="#">PortFolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h5" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h5" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h5" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div> -->
-      </div>
+
+     
     </div>
+
   </nav>
 
 
@@ -71,20 +102,21 @@
     <div class="container ">
 
       <!-- Main content  -->
-      <div class=" col-12 text-info d-flex justify-content-between  pt-5 pb-5">
+      <div class="  text-info d-flex justify-content-between  pt-5 pb-5">
         <div class="">
           <h1 class="text-light fw-bold">RESPONSIVE<br>WEB DESIGN</h1>
           <h3 class="text-light">Fresh & Modern Concept </h3>
           <p class="text-primary ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Harum id voluptas voluptatem maiores itaque ad?
-            Adipisci <br>id quaerat quasi modi nesciunt odit animi mollitia aspernatur,<br> eveniet, necessitatibus cupiditate
+            Adipisci <br>id quaerat quasi modi nesciunt odit animi mollitia aspernatur,<br> eveniet, necessitatibus
+            cupiditate
             ducimus porro.
           </p>
         </div>
 
         <!-- main content image  -->
-        <div >
-          <img src="./image/mobileclick.png"  alt="mobile-pic">
+        <div>
+          <img src="./image/mobileclick.png" class="w-100 h-100" alt="mobile-pic">
         </div>
       </div>
     </div>
@@ -97,34 +129,40 @@
       <div class="row pt-5">
 
         <!-- bottom image and contant 1 -->
-        <div class="col-lg-4 col-sm-12 d-flex flex-column justify-content-center">
+        <div class="col-lg-4 col-12 d-flex flex-column justify-content-center">
           <div>
             <img src="./image/hand.png" class="w-50 mx-5 h-60" alt="hand">
           </div>
           <div>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel obcaecati commodi, amet voluptas, rem architecto natus<br> voluptatum deserunt, quaerat qui maiores quos libero aperiam. Aperiam fugit aspernatur totam?<br></p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel obcaecati commodi, amet voluptas, rem
+              architecto natus<br> voluptatum deserunt, quaerat qui maiores quos libero aperiam. Aperiam fugit
+              aspernatur totam?<br></p>
           </div>
         </div>
 
         <!-- bottom image and contant 2 -->
 
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-4 col-12">
           <div class="mb-5">
             <img src="./image/leppy.png" class="w-50 mx-5 h-60" alt="leptop">
           </div>
           <div>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel obcaecati commodi, amet voluptas, rem architecto natus<br> voluptatum deserunt, quaerat qui maiores quos libero aperiam. Aperiam fugit aspernatur totam?<br> Repellendus, natus?</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel obcaecati commodi, amet voluptas, rem
+              architecto natus<br> voluptatum deserunt, quaerat qui maiores quos libero aperiam. Aperiam fugit
+              aspernatur totam?<br> Repellendus, natus?</p>
           </div>
         </div>
 
         <!-- bottom image and contant 1 -->
-        
-        <div class="col-lg-4 col-sm-12">
+
+        <div class="col-lg-4 col-12">
           <div>
             <img src="./image/sett.png" class="w-50 mx-5  h-60" alt="setting">
           </div>
           <div>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel obcaecati commodi, amet voluptas, rem architecto natus<br> voluptatum deserunt, quaerat qui maiores quos libero aperiam. Aperiam fugit aspernatur totam?<br> Repellendus, natus?</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vel obcaecati commodi, amet voluptas, rem
+              architecto natus<br> voluptatum deserunt, quaerat qui maiores quos libero aperiam. Aperiam fugit
+              aspernatur totam?<br> Repellendus, natus?</p>
           </div>
         </div>
       </div>
@@ -135,8 +173,9 @@
   <!-- mobile and ipad view -->
   <section>
     <div>
-      <div class="col-sm-12 d-lg-none d-flex bg-dark justify-content-center ">
-        <h2 class="pt-3 pb-3"><span class="text-info">Incaendo</span> <span class="text-danger  ">Technologies</span></h2>
+      <div class="col-12 d-lg-none d-flex bg-dark justify-content-center ">
+        <h2 class="pt-3 pb-3"><span class="text-info">Incaendo</span> <span class="text-danger  ">Technologies</span>
+        </h2>
       </div>
     </div>
   </section>
@@ -144,13 +183,14 @@
   <!-- only mobile view  -->
   <section>
     <div>
-      <div class="col-sm-12 d-lg-none d-md-none text-info d-flex justify-content-center ">
-       <div class="pt-2">
-        <img src="./image/mobileclick.png" class="w-200 h-200" alt="mobile">
-       </div>
-       <div class="pt-5">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsa, aspernatur doloremque enim autem quis dicta dolores nemo. Ipsum voluptas repudiandae voluptatibus in similique vero laudantium accusamus delectus cupiditate id?</p>
-       </div>
+      <div class="col-12 d-lg-none d-md-none text-info d-flex justify-content-center ">
+        <div class="pt-2 col-6">
+          <img src="./image/mobileclick.png" class="w-100 " alt="mobile">
+        </div>
+        <div class="pt-5 col-6">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> voluptatum deserunt, quaerat qui maiores quos
+            libero aperiam. Aperiam fugit aspernatur totam?<br></p>
+        </div>
       </div>
     </div>
   </section>
